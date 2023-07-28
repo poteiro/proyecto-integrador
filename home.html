@@ -23,6 +23,7 @@
 
     <!-- Custom styles for this template -->
     <link href="assets/dist/css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -41,26 +42,26 @@
                             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link poppins" href="quienesomos.html">Quienes somos</a>
-                           
+                            <a class="nav-link poppins" href="#quienessomos">Quienes somos</a>
+
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link poppins" href="elegirnos.html
-                            " tabindex="-1" aria-disabled="true">¿porque
+                            <a class="nav-link poppins" href="#porqueelegirnos"
+                             tabindex="-1" aria-disabled="true">¿porque
                                 elegirnos?</a>
-                            <main>    
+                            <main>
                         </li>
                         </main>
                         <li class="nav-item">
-                            <a class="nav-link poppins" href="#" tabindex="-1" aria-disabled="true">propuesta
+                            <a class="nav-link poppins" href="#propuestaeducativa" tabindex="-1" aria-disabled="true">propuesta
                                 educativa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link poppins" href="#" tabindex="-1" aria-disabled="true">ultima noticias</a>
+                            <a class="nav-link poppins" href="#ultimanoticia" tabindex="-1" aria-disabled="true">ultima noticias</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link poppins" href="#" tabindex="-1" aria-disabled="true"
-                                data-bs-toggle="modal" data-bs-target="#exampleModal">ultima noticias</a>
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">modal</a>
                         </li>
 
                     </ul>
@@ -103,7 +104,7 @@
 
                     <div class="container">
                         <div class="carousel-caption">
-                            <img class="img-filtro" width="100%" height="100%" src="">
+                            
                             <h1>Another example headline.</h1>
                             <p>Some representative placeholder content for the second slide of the carousel.</p>
                             <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
@@ -119,6 +120,7 @@
 
                     <div class="container">
                         <div class="carousel-caption text-end">
+                            <img class="img-filtro" width="100%" height="100%" src="assets/img/educativo.jpg">
                             <h1>One more for good measure.</h1>
                             <p>Some representative placeholder content for the third slide of this carousel.</p>
                             <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
@@ -158,7 +160,7 @@
         <div class="container marketing">
 
             <!-- Three columns of text below the carousel -->
-            <div class="row">
+            <div id="quienessomos" class="row">
                 <div class="col-lg-4">
 
                     <img width="50%" height="50%" class="rounded-circle" src="assets/img/teacher.jpg">
@@ -198,7 +200,7 @@
 
             <hr class="featurette-divider">
 
-            <div class="row featurette">
+            <div  id="porqueelegirnos"class="row featurette">
                 <div class="col-md-7">
                     <h2 class="featurette-heading">Educación con especialidad en Nuevas Tecnologías <span
                             class="text-muted">
@@ -267,7 +269,7 @@
 
 
             <!-- Three columns of text below the carousel -->
-            <div class="row mb-5">
+            <div id="propuestaeducativa" class="row mb-5">
                 <div class="col-lg-3">
 
                     <img width="50%" height="50%" class="rounded-circle" src="assets/img/teacher.jpg">
@@ -314,7 +316,7 @@
 
 
             <hr class="featurette-divider">
-            <div class="container">
+            <div id="ultimanoticia" class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <h3>ULTIMAS NOTICIAS</h3>
@@ -351,7 +353,7 @@
         <footer class="container pt-5">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="d-flex justify-content-center">redes sociales </div>
+                    <h3 class="poppins">REDES SOCIALES</h3>
                     <div class="redes-sociales">
                         <a href="enlace-red-social-1"><img src="assets/img/logotipo-facebook.avif" width="20%"
                                 height="20%" alt="facebook"></a>
@@ -362,31 +364,41 @@
 
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                <div class=mapa 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13135.861366641207!2d-58.5643367!3d-34.60503789999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb9f8ff113%3A0x22fd08da6711928d!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20-%20Sede%20Caseros%20I!5e0!3m2!1ses!2sar!4v1689984213343!5m2!1ses!2sar"
-                            width="80" height="30" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-                </iframe>
-                <div class="row">
-                <div class="col-lg-4"> contactos
-                    <h3>Contacto</h3>
-                    <form action="procesar_formulario.php" method="POST">
-                        <label for="UntrefSchool">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
 
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" required></textarea>
-
-                        <button type="submit">Enviar</button>
-                    </form>
-                    <p class="float-end"><a href="#">Back to top</a></p>
+                <div class="col-lg-4"><h3>MAPA</h3>
+                    <div class="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13135.861366641207!2d-58.5643367!3d-34.60503789999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb9f8ff113%3A0x22fd08da6711928d!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20-%20Sede%20Caseros%20I!5e0!3m2!1ses!2sar!4v1689984213343!5m2!1ses!2sar"
+                            width="300" height="300" style="border:1px;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
+
+                <div class="col-lg-4">
+                    <h3>CONTACTO</h3>
+                    <form action="procesar_formulario.php" method="POST">
+                        <div class="mb-3">
+                            <label class="form-label" for="UntrefSchool">Nombre:</label>
+                            <input class="form-control" type="text" id="nombre" name="nombre" required>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label class="form-label" for="email"> Email:</label>
+                            <input class="form-control" type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="mensaje">Mensaje:</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" required></textarea>
+                        </div>
+
+                        <div><button type="submit">Enviar</button></div> 
+                </div>
+                </form>
+                <p class="float-end"><a href="#">Back to top</a></p>
             </div>
+
 
         </footer>
     </main>
@@ -399,15 +411,15 @@
         <div class="modal-dialog modal-dialog-centered ">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">educacion-primaria </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
+                   <P>fdfjdnhfnbswdpwnfpjabfljkbgbglibw</P>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                  
                 </div>
             </div>
         </div>

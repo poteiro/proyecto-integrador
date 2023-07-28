@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Poppins:wght@200&display=swap');
+
+
+    .img-filtro {
+        filter: grayscale(50%)
+    }
+
+    .poppins {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .belanosina {
+        font-family: 'Belanosima', sans-serif;
+    }
+
+    .color-primario {
+        color: #fc7300
+    }
+
+    .btn-primario {
+        color: #fff;
+        background-color: #fc7300;
+    }
+
+    .color-secundario {
+        color: #1f8a70
+    }
+
+    .btn-secundario {
+        color: #fff;
+        background-color: #1f8a70;
+    }
+
+
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+
+    .navbar >li a:hover{
+        transition: all .3s;
+    }
+     
+    .submenu{
+        position: absolute;
+        background-color: black;
+        width: 120%;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 1.5;
+    }
+    .submenu li a{
+        display: block;
+        padding: 15px;
+        font-family: "Open sans";
+        text-decoration: none;
+    }
+     
+    .navbar-brand li hover .submenu{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .mapa{
+        margin: 25px;
+
+    }
