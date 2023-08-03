@@ -1,7 +1,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Poppins:wght@200&display=swap');
 
+*{
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
 
+}
+header{
+    background-color: black;
+    text-align: center;
+    padding: 35px 0;
+
+}
+    
     .img-filtro {
         filter: grayscale(50%)
     }
@@ -49,6 +61,20 @@
 
     .navbar >li a:hover{
         transition: all .3s;
+       
+    }
+    .nav-item {
+        align-items: center;
+        color: white;
+        display: inline-block;
+        margin: 0 10px;
+        padding: 0 20px;
+        border-radius: 30px;
+    }
+
+    .navbar-brand{
+        text-transform: uppercase;
+        float: left;
     }
      
     .submenu{
@@ -74,4 +100,12 @@
     .mapa{
         margin: 25px;
 
+    }
+
+    @media screen and (max-width:800px){
+        .navbar{
+            flex-direction: column;
+            height: 120px;
+            justify-content: space-evenly;
+        }
     }
